@@ -17,5 +17,5 @@ app.use('/api/project',projectRouter);
 
 
 server.listen(process.env.PORT,()=>{
-   console.log(`server is running on http://localhost:${PORT}`);
+   console.log(`server is running on ${PORT}`);
 })

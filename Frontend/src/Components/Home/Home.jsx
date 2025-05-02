@@ -27,7 +27,7 @@ const Home = () => {
       return;
     }
     if(projects.length>=4){
-      setError('You can only create 5 projects!');
+      setError('You can only create 4 projects!');
       setTimeout(() => {
         setError('');
       }, 2000);
