@@ -1,6 +1,6 @@
 const taskModel=require('../models/taskModel');
 const { validationResult } = require('express-validator');
-const projectModel=require('../model/projectModel');
+const projectModel=require('../models/projectModel');
 
 exports.createTask=async(req,res)=>{
     const errors=validationResult(req);
