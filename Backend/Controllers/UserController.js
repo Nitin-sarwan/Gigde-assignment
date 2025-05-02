@@ -1,10 +1,10 @@
 const { validationResult } = require('express-validator');
-const userModel=require('../model/UserModel');
+const userModel=require('../models/userModel');
 const dotenv=require('dotenv');
 dotenv.config();
 const jwt=require('jsonwebtoken');
 const {promisify}=require('util');
-const blacklistModel=require('../model/BlacklistModel');
+const blacklistModel=require('../models/BlacklistModel');
 
 
 

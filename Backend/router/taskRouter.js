@@ -2,7 +2,7 @@ const express=require("express");
 const router=express.Router();
 const TaskController=require("../Controllers/taskController");
 const {body}=require("express-validator");
-const userController=require("../Controllers/UserController");
+const userController=require("../Controllers/userController");
 
 router.post("/create",[
     body("title").isLength({min:1}).withMessage("Title must be at least 1 characters long!"),

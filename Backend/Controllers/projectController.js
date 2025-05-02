@@ -1,6 +1,6 @@
 const {validationResult}=require('express-validator');
-const Project=require('../model/projectModel');
-const taskModel=require('../model/taskModel');
+const Project=require('../models/projectModel');
+const taskModel=require('../models/taskModel');
 
 
 exports.createProject=async(req,res)=>{

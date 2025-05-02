@@ -58,6 +58,7 @@ const Signup = () => {
             }
         }catch(err){
             console.error('There was an error!', err);
+            setError(err.response.data.errors);
             navigate('/signup');
         }
         setName('');
