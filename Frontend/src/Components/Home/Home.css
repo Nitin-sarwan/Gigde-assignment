@@ -1,0 +1,84 @@
+.home{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    transition:smooth 0.3s ease-in-out; 
+    position:relative;
+}
+.home h1{
+    margin-bottom:5px;
+}
+.total-status{
+    position:absolute;
+    top:58px;
+    right:15px;
+    background-color: #6C25FF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size:18px
+}
+.total-status h3{
+    margin:0;
+}
+.project-button{
+    width: 100%;
+    height: 50px;
+    background-color: #6C25FF;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px;
+}
+.projects{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+}
+.project{
+    border:1px solid #6C25FF;
+    border-radius:10px;
+    display:flex;
+    padding:0 20px;
+    justify-content:space-between;
+    cursor:pointer;
+    margin:10px;
+    transition: all 0.3s ease-in-out;
+}
+.project-heading{
+    text-transform: capitalize;
+}
+.project-details{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    padding:10px 0;
+}
+.project-details  button{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;   
+}
+.delete-button:hover{
+    transform: scale(1.2);
+
+}
+.project-details img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.error{
+    color:red;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}

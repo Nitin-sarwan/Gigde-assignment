@@ -1,0 +1,132 @@
+.signup-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 240, 240);
+    height: 100vh;
+}
+
+.signup-container {
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.heading {
+    width: 60%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: 40px;
+}
+span{
+    color: red;
+}
+.form-group p {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+span {
+    color: red;
+}
+
+.full-name-label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.phone-number-label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.email-address-label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.signup-password-label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.company-label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+input {
+    padding: 10px 4px;
+    border-radius: 5px;
+    border: 1px solid #C8CACC;
+}
+
+.signup-agency p {
+    margin: 0px;
+}
+
+.sign-button {
+    padding: 10px 4px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #6C25FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+}

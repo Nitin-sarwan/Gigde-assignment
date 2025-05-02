@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 240, 240);
+    height: 100vh;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    max-width: 350px;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 5px;
+}
+
+.h1 {
+    width: 50%;
+    font-size: 12px;
+}
+
+span {
+    color: red;
+}
+
+
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: 40px;
+}
+.form-group p{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    padding: 0 17px;
+    border: 1px solid #CBCBCB;
+    border-radius: 6px;
+    transition: .3s all;
+}
+
+input:focus {
+    border-color: #6C25FF;
+}
+
+.form-group label {
+    position: absolute;
+    height: 15px;
+    z-index: 1;
+    background: #F7F8F9;
+    font-size: 13px;
+    color: #6C25FF;
+    top: -8px;
+    left: 10px;
+}
+
+.loging-button {
+    padding: 10px 4px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #C8CACC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.loging-button:hover {
+    background-color: #6C25FF;
+    color: white;
+}
+.last-div{
+    display: flex;
+    gap:10px;
+}
+.last-div a{
+    margin-top:12px;
+    height:22px;
+}
+.signup-link{
+    text-decoration: none;
+    margin-top:0px;
+    border:none;
+    display: flex;
+    padding:4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.signup-link:hover{
+    background-color: #6C25FF;
+    color:white;
+}
