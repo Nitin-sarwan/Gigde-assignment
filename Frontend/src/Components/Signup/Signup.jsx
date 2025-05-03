@@ -1,6 +1,6 @@
 import React, { useState,useContext} from 'react'
 import './Signup.css'
-import {useNavigate } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import { userDataContext } from "../../Context/userContext";
 
@@ -136,6 +136,10 @@ const Signup = () => {
                         </div>
                         <button className="sign-button" type="submit">Create Account</button>
                     </form>
+                    <div className="last-div">
+                        <p>Already have an account?</p>
+                        <Link className="login-link" to="/">Login</Link>
+                    </div>
                 </div>
             </div>
 

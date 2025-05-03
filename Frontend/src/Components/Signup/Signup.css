@@ -130,3 +130,10 @@ input {
     margin: 0 auto;
     width: 95%;
 }
+.last-div a{
+    text-decoration: none;
+    color: #6C25FF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top:18px;
+}

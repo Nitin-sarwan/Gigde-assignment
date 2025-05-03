@@ -96,18 +96,5 @@ input:focus {
 .last-div a{
     margin-top:12px;
     height:22px;
-}
-.signup-link{
     text-decoration: none;
-    margin-top:0px;
-    border:none;
-    display: flex;
-    padding:4px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.signup-link:hover{
-    background-color: #6C25FF;
-    color:white;
 }
