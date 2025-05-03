@@ -15,6 +15,10 @@ app.use('/api/user', userRouter);
 app.use('/api/task', taskRouter);
 app.use('/api/project',projectRouter);
 
+app.get('/',(req,res)=>{
+      res.send('API is running...');
+});
+
 
 server.listen(process.env.PORT,()=>{
    console.log(`server is running on ${PORT}`);
