@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const {body}=require('express-validator');
-const userController=require('../Controllers/'); // Ensure consistent casing in the import path
+const userController=require('../Controllers/userController'); // Ensure consistent casing in the import path
 
 // Ensure consistent casing in the import path
 router.post('/signup',[
