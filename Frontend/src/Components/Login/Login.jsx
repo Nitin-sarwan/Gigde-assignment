@@ -18,7 +18,7 @@ const Login = () => {
         const newemail = email.trim();
         if (email.trim().length == 0) { newErrors.email = "Email address is required" }
         if (password.trim().length == 0) { newErrors.password = "Password is required" }
-        if (password.length < 5 && password.length > 0) { newErrors.password = "Password should be more than 8 characters" }
+        if (password.length < 5 && password.length > 0) { newErrors.password = "Password should be more than 5 characters" }
         if (password.length > 20) { newErrors.password = "Password should be less than 20 characters" }
         if (!email.endsWith('@gmail.com') && email.trim().length > 0) { newErrors.email = "Invalid format!" }
         if (email.includes(' ')) { newErrors.email = "Invalid format!" }

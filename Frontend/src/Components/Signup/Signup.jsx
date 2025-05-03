@@ -30,7 +30,7 @@ const Signup = () => {
         if (password.trim().length == 0) { newErrors.password = "Password is required" }
         if (country.trim().length == 0) { newErrors.coountryName = "Country name is required" }
         if (newemail.length == 0) { newErrors.email = "Emaill is required" }
-        if (password.length < 8 && password.length > 0) { newErrors.password = "Password should be more than 8 characters" }
+        if (password.length < 4 && password.length > 0) { newErrors.password = "Password should be more than 5 characters" }
         if (password.length > 20) { newErrors.password = "Password should be less than 20 characters" }
         if (country.length < 2 && country.length > 0) { newErrors.country = "Company name should be more than 2 characters" }
         if (country.length > 20) { newErrors.country = "Company name should be less than 20 characters" }
@@ -65,6 +65,16 @@ const Signup = () => {
                     errorObj[error.param] = error.msg;
                 })
                 setError(errorObj);
+                return;
+            }
+            if (err.response && err.response.status === 400) {
+                const errorData = err.response.data.message;
+                setError({ country: errorData });
+                return;
+            }
+            if (err.response && err.response.status === 500) {
+                const errorData = err.response.data.error;
+                setError({ country: errorData });
                 return;
             }
             navigate('/signup');
