@@ -1,8 +1,8 @@
 const express=require('express');
 const router=express.Router();
-const UserController=require('../Controllers/userController');
 const {body}=require('express-validator');  
 
+// Ensure consistent casing in the import path
 router.post('/signup',[
     body("name").isLength({min:3}).withMessage('Name must be at least 3 characters long!'),
     body("email").isEmail().withMessage('Invalid email!'),
