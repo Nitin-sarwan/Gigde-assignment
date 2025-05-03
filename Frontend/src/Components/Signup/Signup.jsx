@@ -58,7 +58,15 @@ const Signup = () => {
             }
         }catch(err){
             console.error('There was an error!', err);
-            setError(err.response.data.errors);
+            if (err.response && err.response.status === 422) {
+                const errorData = err.response.data.errors;
+                const errorObj = {};
+                errorData.forEach((error) => {
+                    errorObj[error.param] = error.msg;
+                })
+                setError(errorObj);
+                return;
+            }
             navigate('/signup');
         }
         setName('');

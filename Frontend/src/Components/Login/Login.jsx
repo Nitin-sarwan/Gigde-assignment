@@ -41,6 +41,25 @@ const Login = () => {
             }
         }catch(err){
             console.log(err);
+            if(err.response && err.response.status===422){
+                const errorData=err.response.data.errors;
+                const errorObj={};
+                errorData.forEach((error)=>{
+                    errorObj[error.param]=error.msg;
+                })
+                setError(errorObj);
+                return; 
+            }
+            if(err.response && err.response.status===400){
+                const errorData=err.response.data.message;
+                setError({password:errorData});
+                return; 
+            }
+            if(err.response && err.response.status===500){
+                const errorData=err.response.data.error;
+                setError({password:errorData});
+                return;
+            }
             navigate('/');
         }
 
