@@ -9,12 +9,12 @@ router.post('/signup',[
     body("email").isEmail().withMessage('Invalid email!'),
     body("password").isLength({min:5}).withMessage('Password must be at least 5 characters long!'),
     body("country").isLength({min:3}).withMessage('Country must be at least 3 characters long!'),
-],UserController.signup);
+],userController.signup);
 router.post('/login',[
     body("email").isEmail().withMessage("Invalid email!"),
     body("password").isLength({min:5}).withMessage("Password must be at least 5 characters long!"),
-],UserController.login);
-router.get('/profile',UserController.auth,UserController.profile);
-router.get('/logout',UserController.auth,UserController.logout);
+],userController.login);
+router.get('/profile',userController.auth,userController.profile);
+router.get('/logout',userController.auth,userController.logout);
 
 module.exports=router;

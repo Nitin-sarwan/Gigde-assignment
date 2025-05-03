@@ -4,7 +4,7 @@ const dotenv=require('dotenv');
 dotenv.config();
 const jwt=require('jsonwebtoken');
 const {promisify}=require('util');
-const blacklistModel=require('../models/BlacklistModel');
+const blacklistModel=require('../models/blacklistModel');
 
 
 
